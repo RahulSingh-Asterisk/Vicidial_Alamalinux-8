@@ -248,6 +248,7 @@ make install-config
 
 cd /etc/dahdi
 mv system.conf.sample system.conf
+modprobe dahdi
 
 dahdi_cfg -v
 ........
