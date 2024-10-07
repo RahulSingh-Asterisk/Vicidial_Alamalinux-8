@@ -119,6 +119,7 @@ interactive-timeout
 #log-error = /var/log/mysqld/mysqld.log
 #pid-file = /var/run/mysqld/mysqld.pid
 
+....................................................................
 
 
 mkdir /var/log/mysqld
@@ -126,13 +127,13 @@ touch /var/log/mysqld/slow-queries.log
 chown -R mysql:mysql /var/log/mysqld
 systemctl restart mariadb
 
-
+....................................................................
 
 ###Install the Perl Modules
 
 
 yum install -y perl-CPAN perl-YAML perl-libwww-perl perl-DBI perl-DBD-MySQL perl-GD perl-Env perl-Term-ReadLine-Gnu perl-SelfLoader perl-open.noarch
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 cpan -i Tk String::CRC Tk::TableMatrix Net::Address::IP::Local Term::ReadLine::Gnu Spreadsheet::Read Net::Address::IPv4::Local RPM::Specfile Spreadsheet::XLSX Spreadsheet::ReadSXC MD5 Digest::MD5 Digest::SHA1 Bundle::CPAN Pod::Usage Getopt::Long DBI DBD::mysql Net::Telnet Time::HiRes Net::Server Mail::Sendmail Unicode::Map Jcode Spreadsheet::WriteExcel OLE::Storage_Lite Proc::ProcessTable IO::Scalar Scalar::Util Spreadsheet::ParseExcel Archive::Zip Compress::Raw::Zlib Spreadsheet::XLSX Test::Tester Spreadsheet::ReadSXC Text::CSV Test::NoWarnings Text::CSV_PP File::Temp Text::CSV_XS Spreadsheet::Read LWP::UserAgent HTML::Entities HTML::Strip HTML::FormatText HTML::TreeBuilder Switch Time::Local Mail::POP3Client Mail::IMAPClient Mail::Message IO::Socket::SSL readline
 
 
